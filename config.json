@@ -1,0 +1,12 @@
+{
+    "noaa-config":{
+        "token":"YOUR_NOAA_API_TOKEN",
+        "base_url":"https://www.ncdc.noaa.gov/cdo-web/api/v2/data?datasetid=GHCND&stationid=GHCND:"
+    },
+    "params":{
+		"weather_stations": ["USW00012916", "USW00094982"],
+		"weather_features": ["station_dt_key", "date", "station", "PRCP", "SNOW", "SNWD", "AWND", "TMAX", "TMIN"],
+        "start_date":"2018-01-01",
+        "end_date":"2018-12-31"
+    }
+}
