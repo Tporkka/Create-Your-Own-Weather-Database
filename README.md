@@ -1,6 +1,10 @@
 # NOAA_Historical_Weather_Extraction
 This is a script for extracting historical weather data in bulk using the NOAA API. The end result is a series of comma delimeted files that can easily be integrated into a relational database. 
 
+### Why bother
+
+The weather can have a large impact on businesses outcomes and other facets of life. Unfortunately, it can be difficult to analyze this impact without accurate historical data in a structured format. Storing historical weather in clean time series allows you to quantify this impact, and more importantly, create models to better predict future outcomes. 
+
 ### Dependencies
 Python 3 (Packages: requests, datetime, json, pandas, os, math, time)
 
@@ -41,3 +45,7 @@ This will run the script and create a single comma delimited file for each weath
  - Improve error handling and communication
  - Add ability to pass dynamic dates (i.e. `end_date = datetime.datetime.now().date()`) when specified in config file. 
  
+### Some suggestions for creating your own weather database
+
+This is the first part of an effort to create and maintain a database of historical weather data. To create a fully automated and up-to-date table or set of tables, you will need to set up an ETL pipeline that stores new or updated records as they are available. I recommend running this script once to gather bulk historical data (set the config file dates to your liking) and then changing the script to just gather the last week of data since some weather stations are updated less frequently. This will gather new or updated records that you can use to update your database tables. 
+I automated this entire workflow using Microsoft Azure: Script run as Azure Function, drop resulting text file to Azure Blob storage, Azure Data Factory pipeline to copy data from Blob to a table within Azure Data Warehouse (using a stored proc on ADW to handle upsert logic). A similar process can be followed regardless of which tools you're using. 
