@@ -1,9 +1,9 @@
-# NOAA_Historical_Weather_Extraction
-This is a script for extracting historical weather data in bulk using the NOAA API. The end result is a series of comma delimeted files that can easily be integrated into a relational database. 
-
 ### Why bother
 
 Weather can have a large impact on businesses outcomes and other facets of life. Unfortunately, it can be difficult to analyze this impact without accurate historical data in a structured format. Storing historical weather in clean time series allows you to quantify this impact, and more importantly, create models to better predict future outcomes. 
+
+# NOAA_Historical_Weather_Extraction
+This is a script for extracting historical weather data in bulk using the NOAA API. The end result is a series of comma delimeted files that can easily be integrated into a relational database. 
 
 ### Dependencies
 Python 3 (Packages: requests, datetime, json, pandas, os, math, time)
