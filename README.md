@@ -3,7 +3,7 @@ This is a script for extracting historical weather data in bulk using the NOAA A
 
 ### Why bother
 
-The weather can have a large impact on businesses outcomes and other facets of life. Unfortunately, it can be difficult to analyze this impact without accurate historical data in a structured format. Storing historical weather in clean time series allows you to quantify this impact, and more importantly, create models to better predict future outcomes. 
+Weather can have a large impact on businesses outcomes and other facets of life. Unfortunately, it can be difficult to analyze this impact without accurate historical data in a structured format. Storing historical weather in clean time series allows you to quantify this impact, and more importantly, create models to better predict future outcomes. 
 
 ### Dependencies
 Python 3 (Packages: requests, datetime, json, pandas, os, math, time)
