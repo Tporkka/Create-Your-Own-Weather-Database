@@ -1,4 +1,4 @@
-### Why bother
+### Why bother?
 
 Weather can have a significant impact on businesses outcomes and other facets of life. Unfortunately, it can be difficult to analyze this impact without accurate historical data in a structured format. Storing historical weather in clean time series allows you to quantify this impact, and more importantly, create models to better predict future outcomes. 
 
